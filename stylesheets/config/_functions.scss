@@ -1,0 +1,13 @@
+/**
+====================================
+    ==> Functions Partial <==
+====================================
+*/
+
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}
+
+// @function weight($weight-name) {
+//   @return map-get($font-weights, $weight-name);
+// }

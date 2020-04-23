@@ -1,0 +1,19 @@
+/**
+====================================
+    ==> Base Partial <==
+====================================
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: em(16px);
+}
