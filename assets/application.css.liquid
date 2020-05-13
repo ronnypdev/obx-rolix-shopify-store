@@ -10577,3 +10577,61 @@ ul,
 ol {
   list-style: none;
 }
+
+/**
+====================================
+    ==> Nav Partial <==
+====================================
+*/
+.mobile-nav {
+  display: none;
+}
+
+.header {
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 10px;
+}
+
+.main-nav .navbar-item {
+  display: inline-block;
+}
+
+.btn-hamburger {
+  display: none;
+  margin-top: 19px;
+  order: 1;
+}
+.btn-hamburger span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #000000;
+}
+.btn-hamburger span::before {
+  content: "";
+  background-color: #000000;
+  display: block;
+  width: 35px;
+  height: 3px;
+  position: relative;
+  bottom: 8px;
+}
+.btn-hamburger span::after {
+  content: "";
+  background-color: #000000;
+  display: block;
+  width: 35px;
+  height: 3px;
+  position: relative;
+  top: 5px;
+}
+
+.cart-link {
+  display: inline-block;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.items--center {
+  align-items: center;
+}
