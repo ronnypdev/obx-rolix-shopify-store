@@ -7,8 +7,17 @@
   display: none;
 }
 
+.logo {
+  font-size: em(20px) * 2;
+  font-weight: 700;
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+}
+
 .header {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $black;
   padding-top: 10px;
 }
 
@@ -16,34 +25,12 @@
   .navbar-item {
     display: inline-block;
   }
-}
 
-.btn-hamburger {
-  display: none;
-  margin-top: 19px;
-  order: 1;
-  span {
-    display: block;
-    width: 35px;
-    height: 3px;
-    background-color: $black;
-    &::before {
-      content: '';
-      background-color: $black;
-      display: block;
-      width: 35px;
-      height: 3px;
-      position: relative;
-      bottom: 8px;
-    }
-    &::after {
-      content: '';
-      background-color: $black;
-      display: block;
-      width: 35px;
-      height: 3px;
-      position: relative;
-      top: 5px;
+  .nav-link {
+    color: $black;
+    font-weight: 700;
+    &:hover {
+      color: $black;
     }
   }
 }
@@ -52,6 +39,8 @@
   display: inline-block;
   margin-top: 8px;
   text-transform: capitalize;
+  color: $black;
+  font-weight: 700;
 }
 
 .items--center {

@@ -113,6 +113,7 @@ td:not([align]), th:not([align]) {
 .breadcrumb, .button, .delete, .file, .is-unselectable, .modal-close, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -324,6 +325,7 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
@@ -10580,22 +10582,9 @@ ol {
 
 /**
 ====================================
-    ==> Nav Partial <==
+    ==> Hamburger Button Partial <==
 ====================================
 */
-.mobile-nav {
-  display: none;
-}
-
-.header {
-  border-bottom: 1px solid #e3e3e3;
-  padding-top: 10px;
-}
-
-.main-nav .navbar-item {
-  display: inline-block;
-}
-
 .btn-hamburger {
   display: none;
   margin-top: 19px;
@@ -10626,10 +10615,46 @@ ol {
   top: 5px;
 }
 
+/**
+====================================
+    ==> Nav Partial <==
+====================================
+*/
+.mobile-nav {
+  display: none;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000000;
+}
+.logo:hover {
+  color: #000000;
+}
+
+.header {
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+}
+
+.main-nav .navbar-item {
+  display: inline-block;
+}
+.main-nav .nav-link {
+  color: #000000;
+  font-weight: 700;
+}
+.main-nav .nav-link:hover {
+  color: #000000;
+}
+
 .cart-link {
   display: inline-block;
   margin-top: 8px;
   text-transform: capitalize;
+  color: #000000;
+  font-weight: 700;
 }
 
 .items--center {

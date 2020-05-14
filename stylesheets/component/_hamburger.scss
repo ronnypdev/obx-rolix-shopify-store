@@ -1,0 +1,35 @@
+/**
+====================================
+    ==> Hamburger Button Partial <==
+====================================
+*/
+
+.btn-hamburger {
+  display: none;
+  margin-top: 19px;
+  order: 1;
+  span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: $black;
+    &::before {
+      content: '';
+      background-color: $black;
+      display: block;
+      width: 35px;
+      height: 3px;
+      position: relative;
+      bottom: 8px;
+    }
+    &::after {
+      content: '';
+      background-color: $black;
+      display: block;
+      width: 35px;
+      height: 3px;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
