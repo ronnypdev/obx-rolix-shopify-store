@@ -10582,48 +10582,9 @@ ol {
 
 /**
 ====================================
-    ==> Hamburger Button Partial <==
-====================================
-*/
-.btn-hamburger {
-  display: none;
-  margin-top: 19px;
-  order: 1;
-}
-.btn-hamburger span {
-  display: block;
-  width: 35px;
-  height: 3px;
-  background-color: #000000;
-}
-.btn-hamburger span::before {
-  content: "";
-  background-color: #000000;
-  display: block;
-  width: 35px;
-  height: 3px;
-  position: relative;
-  bottom: 8px;
-}
-.btn-hamburger span::after {
-  content: "";
-  background-color: #000000;
-  display: block;
-  width: 35px;
-  height: 3px;
-  position: relative;
-  top: 5px;
-}
-
-/**
-====================================
     ==> Nav Partial <==
 ====================================
 */
-.mobile-nav {
-  display: none;
-}
-
 .logo {
   font-size: 2.5em;
   font-weight: 700;
@@ -10638,6 +10599,9 @@ ol {
   padding-top: 10px;
 }
 
+.main-nav {
+  display: none;
+}
 .main-nav .navbar-item {
   display: inline-block;
 }
@@ -10659,4 +10623,62 @@ ol {
 
 .items--center {
   align-items: center;
+}
+
+/**
+====================================
+    ==> Hamburger Button Partial <==
+====================================
+*/
+.btn-hamburger {
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  order: 1;
+}
+.btn-hamburger span,
+.btn-hamburger span::before,
+.btn-hamburger span::after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 45px;
+  background: #343434;
+  position: absolute;
+  display: block;
+  content: "";
+}
+.btn-hamburger span::before {
+  top: -10px;
+}
+.btn-hamburger span::after {
+  bottom: -10px;
+}
+.btn-hamburger span,
+.btn-hamburger span::before,
+.btn-hamburger span::after {
+  transition: all 500ms ease-in-out;
+}
+.btn-hamburger.active span {
+  background-color: transparent;
+}
+.btn-hamburger.active span::before, .btn-hamburger.active span::after {
+  top: 0;
+}
+.btn-hamburger.active span::before {
+  transform: rotate(45deg);
+}
+.btn-hamburger.active span::after {
+  transform: rotate(-45deg);
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: red;
+  width: 100%;
+  height: 100vh;
 }

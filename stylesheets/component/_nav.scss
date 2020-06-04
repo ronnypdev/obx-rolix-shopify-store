@@ -3,9 +3,6 @@
     ==> Nav Partial <==
 ====================================
 */
-.mobile-nav {
-  display: none;
-}
 
 .logo {
   font-size: em(20px) * 2;
@@ -22,6 +19,7 @@
 }
 
 .main-nav {
+  display: none;
   .navbar-item {
     display: inline-block;
   }
