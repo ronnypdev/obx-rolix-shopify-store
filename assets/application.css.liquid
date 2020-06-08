@@ -10585,6 +10585,13 @@ ol {
     ==> Nav Partial <==
 ====================================
 */
+.header {
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .logo {
   font-size: 2.5em;
   font-weight: 700;
@@ -10592,11 +10599,6 @@ ol {
 }
 .logo:hover {
   color: #000000;
-}
-
-.header {
-  border-bottom: 1px solid #000000;
-  padding-top: 10px;
 }
 
 .main-nav {
@@ -10634,8 +10636,10 @@ ol {
   margin-top: 5px;
   cursor: pointer;
   display: inline-block;
-  position: relative;
+  position: fixed;
+  top: 30px;
   order: 1;
+  z-index: 2;
 }
 .btn-hamburger span,
 .btn-hamburger span::before,
@@ -10674,11 +10678,37 @@ ol {
 }
 
 .mobile-nav {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  background: red;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(-100vh);
+  transition: all 0.95s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-nav.is-mobile-overlay {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.mobile-nav .mobile-nav__item {
+  margin-bottom: 40px;
+}
+.mobile-nav .mobile-nav__link {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 700;
+}
+.mobile-nav .mobile-nav__link:hover {
+  color: #000000;
 }

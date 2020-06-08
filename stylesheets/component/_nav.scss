@@ -4,6 +4,13 @@
 ====================================
 */
 
+.header {
+  border-bottom: 1px solid $black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .logo {
   font-size: em(20px) * 2;
   font-weight: 700;
@@ -11,11 +18,6 @@
   &:hover {
     color: $black;
   }
-}
-
-.header {
-  border-bottom: 1px solid $black;
-  padding-top: 10px;
 }
 
 .main-nav {
