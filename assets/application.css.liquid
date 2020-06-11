@@ -113,7 +113,6 @@ td:not([align]), th:not([align]) {
 .breadcrumb, .button, .delete, .file, .is-unselectable, .modal-close, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -325,7 +324,6 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
@@ -10632,11 +10630,16 @@ ol {
 .btn-hamburger {
   margin-top: 5px;
   cursor: pointer;
-  display: none;
+  display: block;
   position: fixed;
   top: 30px;
   order: 1;
   z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .btn-hamburger {
+    display: none;
+  }
 }
 .btn-hamburger span,
 .btn-hamburger span::before,
