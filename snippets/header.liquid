@@ -1,4 +1,5 @@
 <header class="header">
+    <!-- <a class="cart-link" href="/cart">cart[]</a> -->
 
     <nav aria-label="main navigation" class="navbar" role="navigation">
 
@@ -16,54 +17,12 @@
                         <span></span>
                     </a>
                     <!-- # End toggle button -->
+                    <!-- Main Nav Snippet -->
+                    {% render 'main-nav' %}
 
-                    <ul class="main-nav">
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Men's</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Women's</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Exclusives</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">About</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Contact Us</a>
-                        </li>
-                    </ul>
+                    <!-- Mobile Menu  Snippet -->
+                    {% render 'mobile-nav' %}
 
-                    <ul class="mobile-nav">
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">Home</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">Men's</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">Women's</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">Exclusives</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">About</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="">Contact Us</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a class="mobile-nav__link" href="/cart">cart</a>
-                        </li>
-                    </ul>
-
-
-                    <!-- <a class="cart-link" href="/cart">cart[]</a> -->
 
                 </div><!-- # End navbar-end -->
 

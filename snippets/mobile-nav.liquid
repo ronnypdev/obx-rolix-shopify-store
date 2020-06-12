@@ -1,0 +1,8 @@
+<!-- Mobile Menu -->
+<ul class="mobile-nav">
+    {% for mobilelink in linklists.mobile-menu.links %}
+        <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="{{ mobilelink.url }}">{{ mobilelink.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
