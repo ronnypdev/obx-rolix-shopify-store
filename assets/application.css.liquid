@@ -10628,18 +10628,14 @@ ol {
 ====================================
 */
 .btn-hamburger {
-  margin-top: 5px;
   cursor: pointer;
   display: block;
   position: fixed;
-  top: 30px;
+  margin-left: auto;
+  top: 40px;
   order: 1;
+  right: 71px;
   z-index: 2;
-}
-@media screen and (min-width: 1024px) {
-  .btn-hamburger {
-    display: none;
-  }
 }
 .btn-hamburger span,
 .btn-hamburger span::before,
@@ -10675,6 +10671,18 @@ ol {
 }
 .btn-hamburger.active span::after {
   transform: rotate(-45deg);
+}
+
+.mobile-menu-toggle {
+  margin-left: auto;
+  display: block;
+  position: fixed;
+  z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
 }
 
 .mobile-nav {

@@ -5,15 +5,13 @@
 */
 
 .btn-hamburger {
-  margin-top: 5px;
   cursor: pointer;
   display: block;
-  @include desktop {
-    display: none;
-  }
   position: fixed;
-  top: 30px;
+  margin-left: auto;
+  top: 40px;
   order: 1;
+  right: 71px;
   z-index: 2;
 
   span,
@@ -57,6 +55,16 @@
   }
   &.active span::after {
     transform: rotate(-45deg);
+  }
+}
+
+.mobile-menu-toggle {
+  margin-left: auto;
+  display: block;
+  position: fixed;
+  z-index: 2;
+  @include desktop {
+    display: none;
   }
 }
 
