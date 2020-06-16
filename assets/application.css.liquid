@@ -10590,12 +10590,12 @@ ol {
   z-index: 1;
 }
 
-.logo {
+.logo.navbar-item {
   font-size: 2.5em;
   font-weight: 700;
   color: #000000;
 }
-.logo:hover {
+.logo.navbar-item:hover {
   color: #000000;
 }
 
@@ -10703,13 +10703,18 @@ ol {
   opacity: 0;
   pointer-events: none;
 }
+@media screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
 .mobile-nav.is-mobile-overlay {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0);
 }
 .mobile-nav .mobile-nav__item {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .mobile-nav .mobile-nav__link {
   font-family: "Plex Mono", "Courier New", Courier, monospace;
