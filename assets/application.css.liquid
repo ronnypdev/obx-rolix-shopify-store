@@ -6,6 +6,39 @@
 */
 /**
 ====================================
+    ==> Fonts Partial <==
+====================================
+*/
+/* noto-serif-regular - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: font-url("noto-serif-v8-latin-regular", "eot"), font-url("noto-serif-v8-latin-regular", "eot"), font-url("noto-serif-v8-latin-regular", "woff2"), font-url("noto-serif-v8-latin-regular", "woff"), font-url("noto-serif-v8-latin-regular", "ttf"), font-url("noto-serif-v8-latin-regular", "svg#NotoSerif");
+}
+/* noto-serif-700 - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: font-url("noto-serif-v8-latin-700", "eot"), font-url("noto-serif-v8-latin-700", "eot"), font-url("noto-serif-v8-latin-700", "woff2"), font-url("noto-serif-v8-latin-700", "woff"), font-url("noto-serif-v8-latin-700", "ttf"), font-url("noto-serif-v8-latin-700", "svg#NotoSerif");
+}
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-family: "Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: font-url("ibm-plex-mono-v5-latin-regular", "eot"), font-url("ibm-plex-mono-v5-latin-regular", "eot"), font-url("ibm-plex-mono-v5-latin-regular", "woff2"), font-url("ibm-plex-mono-v5-latin-regular", "woff"), font-url("ibm-plex-mono-v5-latin-regular", "ttf"), font-url("ibm-plex-mono-v5-latin-regular", "svg#NotoSerif");
+}
+/* ibm-plex-mono-700 - latin */
+@font-face {
+  font-family: "Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: font-url("ibm-plex-mono-v5-latin-700", "eot"), font-url("ibm-plex-mono-v5-latin-700", "eot"), font-url("ibm-plex-mono-v5-latin-700", "woff2"), font-url("ibm-plex-mono-v5-latin-700", "woff"), font-url("ibm-plex-mono-v5-latin-700", "ttf"), font-url("ibm-plex-mono-v5-latin-700", "svg#NotoSerif");
+}
+/**
+====================================
     ==> Variables Partial <==
 ====================================
 */
@@ -10510,5 +10543,185 @@ html {
 }
 
 body {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
   font-size: 1em;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Noto Serif", "Georgia", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: "Noto Serif", "Georgia", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 1.875em;
+}
+
+h3 {
+  font-family: "Noto Serif", "Georgia", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 1.875em;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/**
+====================================
+    ==> Nav Partial <==
+====================================
+*/
+.header {
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo.navbar-item {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000000;
+}
+.logo.navbar-item:hover {
+  color: #000000;
+}
+
+.main-nav .navbar-item {
+  display: inline-block;
+}
+.main-nav .nav-link {
+  color: #000000;
+  font-weight: 700;
+}
+.main-nav .nav-link:hover {
+  color: #000000;
+}
+
+.cart-link {
+  display: inline-block;
+  margin-top: 8px;
+  text-transform: capitalize;
+  color: #000000;
+  font-weight: 700;
+}
+
+.items--center {
+  align-items: center;
+}
+
+/**
+====================================
+    ==> Hamburger Button Partial <==
+====================================
+*/
+.btn-hamburger {
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  top: 40px;
+  order: 1;
+  right: 71px;
+  z-index: 2;
+}
+.btn-hamburger span,
+.btn-hamburger span::before,
+.btn-hamburger span::after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 45px;
+  background: #343434;
+  position: absolute;
+  display: block;
+  content: "";
+}
+.btn-hamburger span::before {
+  top: -10px;
+}
+.btn-hamburger span::after {
+  bottom: -10px;
+}
+.btn-hamburger span,
+.btn-hamburger span::before,
+.btn-hamburger span::after {
+  transition: all 500ms ease-in-out;
+}
+.btn-hamburger.active span {
+  background-color: transparent;
+}
+.btn-hamburger.active span::before, .btn-hamburger.active span::after {
+  top: 0;
+}
+.btn-hamburger.active span::before {
+  transform: rotate(45deg);
+}
+.btn-hamburger.active span::after {
+  transform: rotate(-45deg);
+}
+
+.mobile-menu-toggle {
+  margin-left: auto;
+  display: block;
+  position: fixed;
+  z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(-100vh);
+  transition: all 0.95s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+.mobile-nav.is-mobile-overlay {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.mobile-nav .mobile-nav__item {
+  margin-bottom: 30px;
+}
+.mobile-nav .mobile-nav__link {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 2em;
+  color: #000000;
+  font-weight: 700;
+}
+.mobile-nav .mobile-nav__link:hover {
+  color: #000000;
 }

@@ -1,0 +1,42 @@
+<header class="header">
+    <!-- <a class="cart-link" href="/cart">cart[]</a> -->
+
+    <nav aria-label="main navigation" class="navbar" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-brand items--center">
+                <a class="logo navbar-item" href="/">Rolix</a>
+
+                <div class="mobile-menu-toggle">
+                    <a class="btn-hamburger" href="#" id="nav-toggle">
+                        <span></span>
+                    </a>
+                </div>
+
+            </div><!-- end navbar-brand  -->
+            
+                        <!-- Mobile Menu Snippet -->
+            {% render 'mobile-nav' %}
+
+            <div class="navbar-menu items--center">
+
+                <div class="navbar-end">
+
+
+                    <!-- Main Nav Snippet -->
+                    {% render 'main-nav' %}
+
+
+                </div><!-- # End navbar-end -->
+
+
+            </div>
+            <!-- # End navbar-menu -->
+
+        </div><!-- # End inner-container -->
+
+
+    </nav><!-- # End nav element -->
+
+</header>

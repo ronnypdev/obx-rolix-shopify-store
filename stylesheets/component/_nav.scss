@@ -1,0 +1,47 @@
+/**
+====================================
+    ==> Nav Partial <==
+====================================
+*/
+
+.header {
+  border-bottom: 1px solid $black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo.navbar-item {
+  font-size: em(20px) * 2;
+  font-weight: 700;
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+}
+
+.main-nav {
+  .navbar-item {
+    display: inline-block;
+  }
+
+  .nav-link {
+    color: $black;
+    font-weight: 700;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.cart-link {
+  display: inline-block;
+  margin-top: 8px;
+  text-transform: capitalize;
+  color: $black;
+  font-weight: 700;
+}
+
+.items--center {
+  align-items: center;
+}

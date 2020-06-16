@@ -5,6 +5,7 @@
 */
 
 // Config
+@import 'config/fonts';
 @import 'config/vairiables';
 @import 'config/functions';
 @import 'config/mixins';
@@ -17,8 +18,9 @@
 // Layout
 // @import './layout/';
 
-// Layout
-// @import './component/';
+// Component
+@import './component/nav';
+@import './component/hamburger';
 
 // Pages
 // @import './pages/';

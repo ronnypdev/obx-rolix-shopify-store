@@ -15,5 +15,37 @@ html {
 }
 
 body {
+  font-family: $text-font;
   font-size: em(16px);
+  font-weight: 400;
+}
+
+h1 {
+  font-family: $headline-font;
+  font-weight: 700;
+  font-size: em(40px);
+}
+
+h2 {
+  font-family: $headline-font;
+  font-weight: 700;
+  font-size: em(30px);
+}
+
+h3 {
+  font-family: $headline-font;
+  font-weight: 700;
+  font-size: em(30px);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
 }
