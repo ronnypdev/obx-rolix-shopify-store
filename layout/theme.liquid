@@ -21,6 +21,9 @@
     {{ content_for_layout }}
   </main>
   {% render 'footer' %}
+
+
+  {{ '//cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js', | script_tag }}
   {{ 'application.js' | asset_url | script_tag }}
 </body>
 
