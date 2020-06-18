@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   {{ content_for_header }}
   <!-- Header hook for plugins -->
+  <!-- {{'//cdn.jsdelivr.net/npm/@splidejs/splide@2.4.0/dist/css/splide-core.min.css'| stylesheet_tag }} -->
+  {{ '//cdn.jsdelivr.net/npm/@splidejs/splide@2.4.0/dist/css/splide.min.css' | stylesheet_tag }}
   {{ 'application.css' | asset_url | stylesheet_tag }}
 </head>
 
