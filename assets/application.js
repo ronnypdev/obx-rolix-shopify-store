@@ -8,3 +8,11 @@ hamburgerButton.addEventListener('click', function () {
 
   mobileNavOverlay.classList.toggle('is-mobile-overlay');
 });
+
+let glide = new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 4,
+});
+
+glide.mount();

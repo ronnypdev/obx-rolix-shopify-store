@@ -1,0 +1,22 @@
+{
+  "name": "obx-rolix-store",
+  "version": "1.0.0",
+  "description": "shopify custom theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronnypdev/obx-rolix-shopify-store.git"
+  },
+  "author": "Ronny Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronnypdev/obx-rolix-shopify-store/issues"
+  },
+  "homepage": "https://github.com/ronnypdev/obx-rolix-shopify-store#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
