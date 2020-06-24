@@ -1,7 +1,7 @@
-// Put your applicaiton javascript here
 // toggle menu script
 const hamburgerButton = document.querySelector('#nav-toggle');
 const mobileNavOverlay = document.querySelector('.mobile-nav');
+const glideSlider = document.querySelector('.glide');
 
 hamburgerButton.addEventListener('click', function () {
   this.classList.toggle('active');
@@ -9,10 +9,13 @@ hamburgerButton.addEventListener('click', function () {
   mobileNavOverlay.classList.toggle('is-mobile-overlay');
 });
 
-let glide = new Glide('.glide', {
+const glide = new Glide(glideSlider, {
   type: 'carousel',
   startAt: 0,
-  perView: 4,
+  perView: 1,
+  arrows: true,
+  keyboard: true,
+  hoverpause: true,
 });
 
 glide.mount();

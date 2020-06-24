@@ -1,0 +1,21 @@
+/**
+====================================
+    ==> Slider Partial <==
+====================================
+*/
+.slide_link,
+.slide_img {
+  display: block;
+  width: 100%;
+}
+
+.glide__arrows {
+  .glide__arrow {
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .visually-hidden {
+    display: none;
+  }
+}

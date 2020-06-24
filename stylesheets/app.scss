@@ -21,9 +21,14 @@
 // Component
 @import './component/nav';
 @import './component/hamburger';
-
+@import './component/slider';
+@import './component/inline-icon';
 // Pages
 // @import './pages/';
 
 // States
 // @import './pages/';
+
+// Vendors
+@import './vendors/glide.core';
+@import './vendors/glide.theme';
