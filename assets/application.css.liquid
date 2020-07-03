@@ -10735,10 +10735,32 @@ ol {
     ==> Slider Partial <==
 ====================================
 */
+.glide__slide--relative {
+  position: relative;
+}
+
 .slide__link,
 .slide__img {
   display: block;
   width: 100%;
+}
+
+.slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide__content .slide__banner {
+  background: #ffffff;
+  padding: 13px;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 .glide__arrows .glide__arrow {
