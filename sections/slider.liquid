@@ -1,0 +1,89 @@
+<section class="slider">
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {% for block in section.blocks %}
+                    <li class="glide__slide glide__slide--relative">
+                        <a class="slide__link" href="{{ block.settings.slide_link }}">
+                            <img class="slide__img" src="{{ block.settings.slide_image | img_url: 'master' }}" alt="{{ block.settings.slide_banner_alt_text }}">
+                        </a>
+                        <div class="slide__content">
+                            <p class="slide__banner">{{ block.settings.slide_banner_text }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- end slide section -->
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                {% include 'inline-icon' with svg: 'icon-arrow-left.svg', alt: 'Previous', class: 'current-color-stroke' %}
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                {% include 'inline-icon' with svg: 'icon-arrow-right.svg', alt: 'Next', class: 'current-color-stroke' %}
+            </button>
+        </div>
+        <!-- end arrows section -->
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+        <!-- end indicators section -->
+
+    </div>
+    <!-- end glide__slide -->
+</section>
+    <!-- end slider component  -->
+
+
+{% schema %}
+    {
+        "name": "Slider",
+        "class": "hero-slider",
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "Add A Slide",
+                "settings" : [
+                    {
+                        "id": "slide_link",
+                        "type": "url",
+                        "label": "Link for Slide",
+                        "info": "slide link"
+                    },
+                    {
+                        "id": "slide_image",
+                        "type": "image_picker",
+                        "label": "Please Upload an Image",
+                        "info" : "Slide Image"
+                    },
+                    {
+                        "id": "slide_banner_text",
+                        "type": "text",
+                        "label": "Slide Banner Text",
+                        "info": "Slide Banner Text"
+                    },
+                    {
+                        "id": "slide_banner_alt_text",
+                        "type": "text",
+                        "label": "Slide Banner Alt Text",
+                        "info": "Slide Banner Alt Text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "category": "Carousel",
+                "name": "Carousel",
+                "blocks": [
+                    {
+                        "type": "slide"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

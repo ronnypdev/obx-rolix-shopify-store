@@ -13,7 +13,7 @@
   {{ 'application.css' | asset_url | stylesheet_tag }}
 </head>
 
-<body class="template-{{ template }}">
+<body class="template-{{ template }} {{ template }}-page">
 
   {% render 'header' %}
   <main role="main">
@@ -21,6 +21,9 @@
     {{ content_for_layout }}
   </main>
   {% render 'footer' %}
+
+
+  {{ '//cdn.jsdelivr.net/npm/@glidejs/glide'| script_tag }}
   {{ 'application.js' | asset_url | script_tag }}
 </body>
 
