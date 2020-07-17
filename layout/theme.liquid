@@ -13,7 +13,7 @@
   {{ 'application.css' | asset_url | stylesheet_tag }}
 </head>
 
-<body class="template-{{ template }}">
+<body class="template-{{ template }} {{ template }}-page">
 
   {% render 'header' %}
   <main role="main">

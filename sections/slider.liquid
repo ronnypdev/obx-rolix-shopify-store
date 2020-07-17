@@ -40,13 +40,64 @@
         </div>
         <!-- end arrows section -->
 
-        <div class="glide__bullets" data-glide-el="controls[nav]">
+        <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
             <button class="glide__bullet" data-glide-dir="=2"></button>
-        </div>
+        </div> -->
         <!-- end indicators section -->
     </div>
     <!-- end glide__slide -->
 </section>
     <!-- end slider component  -->
+
+
+{% schema %}
+    {
+        "name": "Slider",
+        "class": "hero-slider",
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "Add A Slide",
+                "settings" : [
+                    {
+                        "id": "slide_link",
+                        "type": "url",
+                        "label": "Link for Slide",
+                        "info": "slide link"
+                    },
+                    {
+                        "id": "slide_image",
+                        "type": "image_picker",
+                        "label": "Please Upload an Image",
+                        "info" : "Slide Image"
+                    },
+                    {
+                        "id": "slide_banner_text",
+                        "type": "text",
+                        "label": "Slide Banner Text",
+                        "info": "Slide Banner Text"
+                    },
+                    {
+                        "id": "slide_banner_alt_text",
+                        "type": "text",
+                        "label": "Slide Banner Alt Text",
+                        "info": "Slide Banner Alt Text"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "category": "Carousel",
+                "name": "Carousel",
+                "blocks": [
+                    {
+                        "type": "slide"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

@@ -19,4 +19,11 @@ const glide = new Glide(glideSlider, {
   hoverpause: true,
 });
 
+// const dobFields = Array.prototype.slice.call(document.querySelectorAll('.dob'));
+// dobFields.forEach(function (field) {
+//   field.addEventListener('change', function (event) {
+//     event.target.options[event.target.selectedIndex].value;
+//   });
+// });
+
 glide.mount();
