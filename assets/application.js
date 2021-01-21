@@ -15,7 +15,6 @@ const glide = new Glide(glideSlider, {
   perView: 1,
   arrows: true,
   keyboard: true,
-  autoplay: 5000,
   hoverpause: true,
 });
 

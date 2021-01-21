@@ -1,11 +1,11 @@
 <section class="slider">
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
+            <ul class="glide__slides slide__list">
                 {% for block in section.blocks %}
                     <li class="glide__slide glide__slide--relative">
                         <a class="slide__link" href="{{ block.settings.slide_link }}">
-                            <img class="slide__img" src="{{ block.settings.slide_image | img_url: 'master' }}" alt="{{ block.settings.slide_banner_alt_text }}">
+                            <img class="slide__img" src="{{ block.settings.slide_image | img_url: 'x400' }}" alt="{{ block.settings.slide_banner_alt_text }}">
                         </a>
                         <div class="slide__content">
                             <p class="slide__banner">{{ block.settings.slide_banner_text }}</p>
@@ -76,7 +76,7 @@
         ],
         "presets": [
             {
-                "category": "Carousel",
+                "category": "Component",
                 "name": "Carousel",
                 "blocks": [
                     {

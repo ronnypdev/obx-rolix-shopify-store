@@ -10540,6 +10540,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -10742,6 +10744,11 @@ ol {
 .slide__link,
 .slide__img {
   display: block;
+  width: 100%;
+}
+
+.slide__list {
+  height: 500px;
   width: 100%;
 }
 
